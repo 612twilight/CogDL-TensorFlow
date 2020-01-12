@@ -3,10 +3,11 @@ import networkx as nx
 import scipy.sparse as sp
 from sklearn import preprocessing
 from .. import register_model
+from ..base_model import BaseModel
 
 
 @register_model("grarep")
-class GraRep(object):
+class GraRep(BaseModel):
     @staticmethod
     def add_args(parser):
         """Add model-specific arguments to the parser."""
